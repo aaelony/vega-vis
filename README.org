@@ -14,3 +14,13 @@ dev:vega-vis.core!{:conn 2}=> (swap! app-state assoc :data (:bar examples))
 dev:vega-vis.core!{:conn 2}=> (parse-input)
   #<Promise[~]>
 #+END_SRC
+
+
+From Emacs, start your Cider repl normally with `C-c M-j`, 
+then in the Cider repl do:
+
+#+BEGIN_SRC
+(use 'figwheel-sidecar.repl-api)
+(start-figwheel!)
+#+END_SRC
+

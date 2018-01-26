@@ -32,8 +32,8 @@
                 :preloads [devtools.preload]}}]}
 
  :profiles {:dev
-             {:dependencies [[binaryage/devtools "0.9.4"]
-                             [figwheel-sidecar "0.5.13"]
+             {:dependencies [[binaryage/devtools "0.9.9"]
+                             [figwheel-sidecar "0.5.14"]
                              [com.cemerick/piggieback "0.2.2"]
                              [org.clojure/tools.nrepl "0.2.13"]]
 

@@ -1,3 +1,5 @@
+# README
+
 Much inspiration was taken from https://github.com/miikka/vega-tools-example for the current version of the app.
 
 If you dont use emacs, then in a terminal do:
@@ -14,3 +16,13 @@ If you dont use emacs, then in a terminal do:
     dev:vega-vis.core!{:conn 2}=> (parse-input)
       #<Promise[~]>
 ```
+## CLJS Compilation From Emacs
+
+Start your cider repl normally with `C-c M-j`
+
+```clojure
+(use 'figwheel-sidecar.repl-api)
+(start-figwheel!)
+```
+
+
