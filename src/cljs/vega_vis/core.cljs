@@ -83,12 +83,16 @@
      :component-did-mount
         (fn [this]
           (.update (chart {:el (reagent/dom-node this)})))}))
-
+ 
 (defn app-state-view [as]
   (let [{:keys [error chart]} @as]
      [:div
       [:h1 "testing"]
-      "https://vega.github.io/editor/data/stocks.csv"
+      "Hmmmm, would be nice to include the "
+      [:a
+       {:href "https://vega.github.io/vega/examples/stock-index-chart" }
+       "Vega Stock Index Chart example"
+       ] " that uses data from https://vega.github.io/editor/data/stocks.csv"
       [:br]
       ;; (type (h/stocks-data))
       ;;"blah"
